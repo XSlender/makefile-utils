@@ -1,5 +1,5 @@
 # helpers
-DOTTED_LINE     = "-----------------------------------"
+DOTTED_LINE     = "--------------------------------------------"
 
 # lines & breaks
 LINE_BREAK      = "\\n"
