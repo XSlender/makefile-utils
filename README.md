@@ -10,6 +10,8 @@ What's included :
 * Pre-defined targets to use with docker composed projects.
 
 ## Install the module
+
+### In development environment
 To install, go to your project folder, and execute these commands :
 ```bash
 git submodule add https://github.com/XSlender/makefile-utils.git
@@ -20,6 +22,17 @@ This will :
 * Pull the repository as a submodule (git project dependency).
 * Save previous makefile as `Makefile.save`.
 * Copy the new pre-configured Makefile into your project root folder.
+
+### In production environment
+As you may already produced a makefile and pushed the `.gitmodules` file, there is no need to add the module again.  
+Simply install the module :
+```bash
+git submodule init
+git submodule update --remote
+```
+This will download the latest module version.
+
+> There is no need to use the `init.sh` or you will override your pushed Makefile.
 
 ## Update the module
 To update the module, go to your project folder, and execute these commands :
