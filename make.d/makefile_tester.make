@@ -1,4 +1,4 @@
-makefile-test: ## Testing target for makefiles
+_makefile-test:
 	@printf "${LINE_BREAK}"
 	@printf "${GREEN}Makefile is initialized ${CHECK_MARK}${RESET}"
 	@printf "${LINE_RETURN}"
