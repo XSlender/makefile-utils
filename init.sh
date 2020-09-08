@@ -25,9 +25,14 @@ TARGET_DIR="${SCRIPT_DIR}/.."
 
 echo ""
 
-if [ -f "../Makefile" ]; then
+if [ -f "${TARGET_DIR}/Makefile" ]; then
     echo "Saving old makefile into Makefile.save ..."
     mv "${TARGET_DIR}/Makefile" "${TARGET_DIR}/Makefile.save"
+fi
+
+if [ -f "${TARGET_DIR}/makefile" ]; then
+    echo "Saving old makefile into Makefile.save ..."
+    mv "${TARGET_DIR}/makefile" "${TARGET_DIR}/Makefile.save"
 fi
 
 echo "Initializing makefile environment..."
