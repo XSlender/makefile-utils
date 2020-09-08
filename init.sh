@@ -27,5 +27,5 @@ echo ""
 echo "Initializing makefile environment..."
 
 cp "${ETC_DIR}/Makefile" "${TARGET_DIR}"
-touch "${TARGET_DIR}/Makefile"
-cd "${TARGET_DIR}" && make makefile-test
+chmod +x "${TARGET_DIR}/Makefile"
+cd "${TARGET_DIR}" && make makefile-test 2>/dev/null 
