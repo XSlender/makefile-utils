@@ -22,7 +22,7 @@ STAR_SIGN       = "★"
 define str_print_title
 	printf "${LINE_BREAK}"
 	printf "${YELLOW}${1}${RESET}${LINE_BREAK}"
-	printf "${YELLOW}${1}${DOTTED_LINE}${LINE_RETURN}"
+	printf "${YELLOW}${DOTTED_LINE}${LINE_RETURN}"
 endef
 
 define str_print_step
