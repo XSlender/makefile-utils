@@ -45,6 +45,11 @@ define str_print_line
         printf "${1}${RESET}${LINE_BREAK}"
 endef
 
-define str_print_empty_line
+define str_print_line_break
+        printf "${LINE_BREAK}"
+endef
+
+define str_print_line_return
         printf "${LINE_RETURN}"
 endef
+
