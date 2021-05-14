@@ -40,3 +40,11 @@ endef
 define str_print_warning
 	printf "${YELLOW}[WARNING]: ${1}${RESET}${LINE_BREAK}"
 endef
+
+define str_print_line
+        printf "${1}${RESET}${LINE_BREAK}"
+endef
+
+define str_print_empty_line
+        printf "${LINE_RETURN}"
+endef
