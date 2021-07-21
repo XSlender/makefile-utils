@@ -1,19 +1,19 @@
 docker_up: ## Starts containers, does not build.
 	@printf "${GREEN}Starting ${COMPOSE_PROJECT_NAME} containers...${RESET}\n"
 	@printf "${GREEN}${DOTTED_LINE}${RESET}\n"
-	@docker-compose --compatibility up -d
+	@docker-compose up -d
 	@printf "${LINE_BREAK}"
 
 docker_down: ## Shuts down containers.
 	@printf "${YELLOW}shutting down ${COMPOSE_PROJECT_NAME} containers...${RESET}\n"
 	@printf "${YELLOW}${DOTTED_LINE}${RESET}\n"
-	@docker-compose --compatibility down
+	@docker-compose down
 	@printf "${LINE_BREAK}"
 
 docker_build: ## Builds containers, does not start it nor update images.
 	@printf "${GREEN}Building ${COMPOSE_PROJECT_NAME} containers...${RESET}\n"
 	@printf "${GREEN}${DOTTED_LINE}${RESET}\n"
-	@docker-compose --compatibility build
+	@docker-compose build
 	@printf "${LINE_BREAK}"
 
 docker_update: ## Updates & restarts all the containers.
@@ -28,5 +28,5 @@ docker_launch: ## Builds & starts containers.
 _docker_image_update:
 	@printf "${GREEN}Updating ${COMPOSE_PROJECT_NAME} containers...${RESET}\n"
 	@printf "${GREEN}${DOTTED_LINE}${RESET}\n"
-	@docker-compose --compatibility build --pull
+	@docker-compose build --pull
 	@printf "${LINE_BREAK}"
